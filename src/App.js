@@ -1,4 +1,6 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MemberMainPage from "./pages/MainPage/MemberMainPage";
+import routes from "./routes/routes";
 
 function App() {
   return (
