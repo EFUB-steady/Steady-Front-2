@@ -1,12 +1,12 @@
+import MemberMainPage from "./pages/MainPage/MemberMainPage";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          This is main
-        </p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={routes.MAIN} element={<MemberMainPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

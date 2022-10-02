@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "@pages/Info/styles";
+import { Header } from "@components/Info/styles";
 
 export default function Info() {
     return (

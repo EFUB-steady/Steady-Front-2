@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "@pages/Auth/styles";
+import { Header } from "@components/Auth/styles";
 
 export default function Auth() {
     return (
