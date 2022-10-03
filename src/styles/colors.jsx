@@ -13,6 +13,7 @@ export const blue500 = "#43BBFF";
 export const indigo500 = "#286CCF";
 export const pink500 = "#FF5CEF";
 export const purple500 = "#934DFF";
+export const ewhaGreen = "#00462A";
 
 export const iconColor = "#F5F5F5";
 export const hintColor = "#9C9C9C";
