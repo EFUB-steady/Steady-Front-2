@@ -18,3 +18,5 @@ export const iconColor = "#F5F5F5";
 export const hintColor = "#9C9C9C";
 export const textboxColor = "#EEEEEE";
 export const button2Color = "#DADDDF";
+
+export const mainColor = "#00462A";
