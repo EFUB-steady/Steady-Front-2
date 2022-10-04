@@ -16,4 +16,5 @@ const LoginButton = styled.button`
   font-weight: 500;
   color: white;
   box-shadow: 0 4px 4px ${gray400};
+  margin-left: 10px;
 `;
