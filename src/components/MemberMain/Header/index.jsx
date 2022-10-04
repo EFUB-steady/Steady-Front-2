@@ -21,7 +21,7 @@ const LogoImg = styled.img``;
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+
   margin-top: 50px;
 `;
 const BtnWrapper = styled.div``;
