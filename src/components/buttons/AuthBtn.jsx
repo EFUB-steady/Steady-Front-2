@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Modal from "../modals/index";
+import { ewhaGreen } from "../../styles/colors";
 
 export default function AuthBtn() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -39,7 +40,7 @@ const Button = styled.button`
   height: 40px;
   border-radius: 5px;
 
-  background: #00462a;
+  background: ${ewhaGreen};
   border: #00462a;
   text-align: center;
   font-family: "Pretendard";
