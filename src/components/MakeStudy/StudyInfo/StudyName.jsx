@@ -12,6 +12,7 @@ export default function StudyName() {
 
 export const Wrapper = styled.div`
   display: flex;
+  padding-bottom: 30px;
 `;
 
 export const Info = styled.span`

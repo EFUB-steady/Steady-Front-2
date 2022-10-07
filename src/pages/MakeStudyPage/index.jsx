@@ -31,5 +31,6 @@ export default function MakeStudyPage() {
 
 export const StudyInfo = styled.div`
   display: flex;
+  justify-content: center;
   width: 20%;
 `;

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 export default function Penalty() {
-
   return (
     <Wrapper>
       <Info>벌금 규칙</Info>

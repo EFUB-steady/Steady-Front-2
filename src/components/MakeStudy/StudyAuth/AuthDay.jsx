@@ -14,10 +14,14 @@ export default function AuthDay() {
 
 export const Wrapper = styled.div`
   display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 `;
 
 export const Info = styled.span`
-  margin-right: 30px;
+  margin-left: 50px;
 `;
 
-export const DaySelect = styled.div``;
+export const DaySelect = styled.div`
+  padding-left: 90px;
+`;
