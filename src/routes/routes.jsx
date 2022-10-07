@@ -1,5 +1,6 @@
 const routes = {
-    MAIN: "/",  
-  };
-  
-  export default routes;
+  MAIN: "/",
+  MAKESTUDY: "makestudy/",
+};
+
+export default routes;

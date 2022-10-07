@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MemberMainPage from "./pages/MainPage/MemberMainPage";
+import MakeStudyPage from "./pages/MakeStudyPage/";
 import routes from "./routes/routes";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path={routes.MAIN} element={<MemberMainPage />} />
+        <Route path={routes.MAKESTUDY} element={<MakeStudyPage />} />
       </Routes>
     </BrowserRouter>
   );
