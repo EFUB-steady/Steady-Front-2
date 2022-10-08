@@ -1,5 +1,10 @@
 import React from "react";
-import { Wrapper, StudyInfoWrapper } from "./styles";
+import {
+  Wrapper,
+  StudyInfoWrapper,
+  MyInfoPageWrapper,
+  MyInfoWrapper,
+} from "./styles";
 
 import Header from "../../components/MemberMain/Header";
 import EntireStudy from "../../components/MyInfoPage/EntireStudy";
@@ -10,10 +15,12 @@ export default function MemberMainPage() {
   return (
     <Wrapper>
       <Header />
+
       <StudyInfoWrapper>
         <EntireStudy />
         <EstablishedStudy />
       </StudyInfoWrapper>
+
       <MyInfo />
     </Wrapper>
   );
