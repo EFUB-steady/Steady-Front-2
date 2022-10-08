@@ -1,0 +1,1 @@
+const LogoImg = styled.img``;

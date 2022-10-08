@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { gray400, mainColor } from "../../../styles/colors";
+import { gray400, ewhaGreen } from "../../../styles/colors";
 
 export default function LoginBtn() {
   return <LoginButton>로그인</LoginButton>;
@@ -10,7 +10,7 @@ const LoginButton = styled.button`
   height: 122px;
   border-radius: 5px;
   border: none;
-  background: ${mainColor};
+  background: ${ewhaGreen};
   text-align: center;
   font-size: 15px;
   font-weight: 500;
