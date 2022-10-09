@@ -17,3 +17,8 @@ export const MyInfoPageWrapper = styled.div`
   height: 100%;
   background-color: yellow;
 `;
+
+export const DivideLine = styled.hr`
+  width: 100%;
+  color: #d9d9d9;
+`;
