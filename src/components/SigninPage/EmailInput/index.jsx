@@ -14,7 +14,7 @@ export default function EmailInput() {
           setEmailId(e.target.value);
         }}
         sx={{ my: "10px", mr: "10px" }}
-        name="middleNum"
+        name="emailId"
       />
       <Text>@</Text>
       <FormControl fullWidth>
