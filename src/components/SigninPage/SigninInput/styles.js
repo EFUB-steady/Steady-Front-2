@@ -13,6 +13,7 @@ export const Column = styled.div`
   align-items: center;
   justify-content: center;
   align-self: center;
+  margin: 15px 0;
 `;
 
 export const Text = styled.div`
