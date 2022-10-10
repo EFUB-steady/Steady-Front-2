@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const LeftSide = styled.div`
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
