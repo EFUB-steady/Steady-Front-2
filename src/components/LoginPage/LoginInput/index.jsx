@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Column, TextButton, Row } from "./styles";
 import LoginBtn from "../../buttons/LoginBtn";
+import { useNavigate } from "react-router-dom";
+import routes from "../../../routes/routes";
 
 export default function LoginIdInput() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  let navigate = useNavigate();
 
   return (
     <Row>
@@ -31,7 +34,13 @@ export default function LoginIdInput() {
           fullWidth
         />
         <Row justifyContent={"space-between"}>
-          <TextButton>회원 가입</TextButton>
+          <TextButton
+            onClick={() => {
+              navigate(routes.SIGNIN);
+            }}
+          >
+            회원 가입
+          </TextButton>
           <TextButton>아이디 및 비밀번호 찾기</TextButton>
         </Row>
       </Column>
