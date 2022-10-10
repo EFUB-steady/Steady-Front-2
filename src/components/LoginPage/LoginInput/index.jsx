@@ -5,7 +5,7 @@ import LoginBtn from "../../buttons/LoginBtn";
 import { useNavigate } from "react-router-dom";
 import routes from "../../../routes/routes";
 
-export default function LoginIdInput() {
+export default function LoginInput() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   let navigate = useNavigate();

@@ -1,6 +1,14 @@
 import React from "react";
-import { Wrapper } from "./styles";
+import SigninArea from "../../components/SigninPage/SigninArea";
+import { LeftSide, RightSide, Wrapper } from "../LoginPage/styles";
 
 export default function SigninPage() {
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+      <LeftSide>
+        <SigninArea />
+      </LeftSide>
+      <RightSide />
+    </Wrapper>
+  );
 }
