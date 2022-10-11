@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   width: 100%;
+  height: 100%;
   flex-direction: column;
   flex: 1;
 `;
@@ -14,12 +15,13 @@ export const Container = styled.div`
 export const LeftContainer = styled.div`
   width: 65%;
   float: left;
-  flex: 1;
+  background-color: red;
 `;
 
 export const RightContainer = styled.div`
-  width: 35%;
-  float: right;
-
-  justifycontent: "space-between";
+  width: 30%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  background-color: green;
 `;
