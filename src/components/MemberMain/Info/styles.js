@@ -14,7 +14,8 @@ export const RoundIndex = styled.div`
 `;
 
 export const Box = styled.div`
-  width: relative;
+  width: 550px;
+  height: relative;
   background: #00462a;
   border-radius: 5px;
 

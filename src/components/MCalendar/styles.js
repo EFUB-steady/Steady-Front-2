@@ -11,7 +11,7 @@ export const Bold = styled.div`
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  min-width: 987px;
+  min-width: relative;
   margin: 42px 0;
 
   .react-calendar {
