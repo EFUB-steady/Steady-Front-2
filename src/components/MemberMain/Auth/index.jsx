@@ -1,9 +1,13 @@
 import React from "react";
-import { Header } from "@components/Auth/styles";
+import { RoundIndex, Box, Wrapper, InfoWrapper } from "./styles";
 
-export default function Auth() {
-    return (
-        <Header>캘린더를 클릭하면 보여지는 날짜별 인증목록입니다. </Header>
-    );
+export default function Info() {
+  return (
+    <Wrapper>
+      <InfoWrapper>
+        <RoundIndex>유저이름</RoundIndex>
+        <Box>인증한 컨텐츠</Box>
+      </InfoWrapper>
+    </Wrapper>
+  );
 }
-

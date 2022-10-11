@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const RoundIndex = styled.div`
   background: #00462a;
   width: 90px;
@@ -30,9 +31,6 @@ export const Box = styled.div`
   top: -40px;
 `;
 
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row-reverse;
-`;
+export const Wrapper = styled.div``;
 
 export const InfoWrapper = styled.div``;
