@@ -1,12 +1,12 @@
 import React from "react";
-import SigninArea from "../../components/SigninPage/SigninArea";
+import SignupArea from "../../components/SignupPage/SignupArea";
 import { LeftSide, RightSide, Wrapper } from "../LoginPage/styles";
 
-export default function SigninPage() {
+export default function SignupPage() {
   return (
     <Wrapper>
       <LeftSide>
-        <SigninArea />
+        <SignupArea />
       </LeftSide>
       <RightSide />
     </Wrapper>

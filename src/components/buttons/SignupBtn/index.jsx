@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ewhaGreen, gray400 } from "../../../styles/colors";
 
-export default function SigninBtn() {
+export default function SignupBtn() {
   return <Wrapper>회원가입</Wrapper>;
 }
 

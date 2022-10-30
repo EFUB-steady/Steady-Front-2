@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Text, Wrapper } from "./styles";
 import { TextField } from "@mui/material";
-import { SmallText } from "../SigninInput/styles";
+import { SmallText } from "../SignupInput/styles";
 
 export default function PhoneInput() {
   const [middleNum, setMiddleNum] = useState("");

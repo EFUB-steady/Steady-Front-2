@@ -1,16 +1,16 @@
 import React from "react";
-import SigninInput from "../SigninInput";
+import SignupInput from "../SignupInput";
 import logo from "../../../assets/LogoHorizontal.png";
 import { Column, LogoImg, Row } from "./styles";
-import SigninBtn from "../../buttons/SigninBtn";
+import SignupBtn from "../../buttons/SignupBtn";
 
-export default function SigninArea() {
+export default function SignupArea() {
   return (
     <Row>
       <Column>
         <LogoImg src={logo} />
-        <SigninInput />
-        <SigninBtn />
+        <SignupInput />
+        <SignupBtn />
       </Column>
     </Row>
   );

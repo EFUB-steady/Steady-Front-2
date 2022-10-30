@@ -4,7 +4,7 @@ import { Column, Row, Text, SmallText } from "./styles";
 import PhoneInput from "../PhoneInput";
 import EmailInput from "../EmailInput";
 
-export default function SigninInput() {
+export default function SignupInput() {
   const [name, setName] = useState("");
   const [nickname, setNickname] = useState("");
   const [password, setPassword] = useState("");
