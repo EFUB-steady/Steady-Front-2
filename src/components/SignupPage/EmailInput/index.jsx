@@ -13,22 +13,24 @@ export default function EmailInput() {
         onChange={(e) => {
           setEmailId(e.target.value);
         }}
-        sx={{ my: "10px", mr: "10px" }}
+        sx={{ my: "10px" }}
         name="emailId"
+        fullWidth
       />
       <Text>@</Text>
       <FormControl fullWidth>
         <Select
           id="emailDomain"
           value={emailDomain}
-          onChange={setEmailDomain}
-          sx={{ my: "10px", ml: "10px" }}
+          onChange={(event) => setEmailDomain(event.target.value)}
+          sx={{ my: "10px" }}
+          fullWidth
         >
           <MenuItem value={10}>gmail.com</MenuItem>
           <MenuItem value={20}>naver.com</MenuItem>
           <MenuItem value={30}>daum.net</MenuItem>
-          <MenuItem value={30}>hanmail.net</MenuItem>
-          <MenuItem value={30}>ewhain.net</MenuItem>
+          <MenuItem value={40}>hanmail.net</MenuItem>
+          <MenuItem value={50}>ewhain.net</MenuItem>
         </Select>
       </FormControl>
     </Wrapper>

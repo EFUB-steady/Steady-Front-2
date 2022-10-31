@@ -8,7 +8,9 @@ export default function SignupBtn() {
 
 const Wrapper = styled.div`
   display: flex;
+  display: flex;
   height: 40px;
+  width: 100%;
   color: white;
   background-color: ${ewhaGreen};
   font-weight: 700;

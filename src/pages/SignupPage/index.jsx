@@ -5,10 +5,7 @@ import { LeftSide, RightSide, Wrapper } from "../LoginPage/styles";
 export default function SignupPage() {
   return (
     <Wrapper>
-      <LeftSide>
-        <SignupArea />
-      </LeftSide>
-      <RightSide />
+      <SignupArea />
     </Wrapper>
   );
 }
