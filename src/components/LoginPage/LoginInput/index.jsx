@@ -36,7 +36,7 @@ export default function LoginInput() {
         <Row justifyContent={"space-between"}>
           <TextButton
             onClick={() => {
-              navigate(routes.SIGNIN);
+              navigate(routes.SIGNUP);
             }}
           >
             회원 가입

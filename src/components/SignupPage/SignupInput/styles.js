@@ -10,20 +10,17 @@ export const Row = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
   margin: 15px 0;
+  min-width: 100%;
 `;
 
 export const Text = styled.div`
   display: flex;
   font-size: 16px;
-  min-width: 100px;
+  min-width: 30%;
 `;
 
 export const SmallText = styled.div`
   font-size: 13px;
   color: ${gray400};
-  margin: 0 15px;
 `;
