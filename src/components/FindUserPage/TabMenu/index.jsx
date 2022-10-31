@@ -4,6 +4,7 @@ import styled from "styled-components";
 import routes from "../../../routes/routes";
 import { ewhaGreen, gray200 } from "../../../styles/colors";
 import FindIdInputArea from "../FindIdInputArea";
+import FindPwInputArea from "../FindPwInputArea";
 export default function TabMenu(find) {
   return (
     <Column>
@@ -22,6 +23,7 @@ export default function TabMenu(find) {
         </Link>
       </Row>
       {find.find == "id" && <FindIdInputArea />}
+      {find.find == "pw" && <FindPwInputArea />}
     </Column>
   );
 }

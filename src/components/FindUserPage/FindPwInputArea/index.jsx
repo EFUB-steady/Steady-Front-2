@@ -3,20 +3,20 @@ import styled from "styled-components";
 import { TextField } from "@mui/material";
 import { ewhaGreen } from "../../../styles/colors";
 
-export default function FindIdInputArea() {
-  const [name, setName] = useState();
+export default function FindPwInputArea() {
+  const [email, setEmail] = useState();
   const [phone, setPhone] = useState();
 
   return (
     <Wrapper>
       <Row>
-        <Text>이름(실명)</Text>
+        <Text>이메일</Text>
         <TextField
-          value={name}
+          value={email}
           onChange={(e) => {
-            setName(e.target.value);
+            setEmail(e.target.value);
           }}
-          name="name"
+          name="email"
           fullWidth
         />
       </Row>
