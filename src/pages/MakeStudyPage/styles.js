@@ -36,7 +36,7 @@ export const InputWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 90%;
-  margin-left: 200px;
+  margin-left: 250px;
 `;
 
 export const DivideLine = styled.hr`
