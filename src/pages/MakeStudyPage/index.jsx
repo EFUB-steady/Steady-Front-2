@@ -5,14 +5,15 @@ import Penalty from "../../components/MakeStudy/StudyAuth/Penalty";
 import StudyName from "../../components/MakeStudy/StudyInfo/StudyName";
 import StudyNotice from "../../components/MakeStudy/StudyInfo/StudyNotice";
 import Header from "../../components/MemberMain/Header";
-import { DivideLine, InputWrapper } from "./styles";
+import { DivideLine, InputWrapper, Bold, Button } from "./styles";
 
 export default function MakeStudyPage() {
   return (
     <>
-      <Header />
+      <Header /> 
+      <Button>수정하기</Button>
       <DivideLine />
-      <StudyInfo>스터디 정보</StudyInfo>
+      <Bold>스터디 정보</Bold>
 
       <InputWrapper>
         <StudyName />
@@ -20,7 +21,7 @@ export default function MakeStudyPage() {
       </InputWrapper>
 
       <DivideLine />
-      <StudyInfo>스터디 인증</StudyInfo>
+      <Bold>스터디 인증</Bold>
       <InputWrapper>
         <AuthDay />
         <Penalty />

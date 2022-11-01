@@ -11,6 +11,6 @@ const Button = styled.button`
   border: white;
   font-family: "Pretendard";
   font-size: 18px;
-  font-weight: 400;
   color: grey;
+  margin-left: 1100px;
 `;

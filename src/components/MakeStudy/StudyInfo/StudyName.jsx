@@ -16,11 +16,11 @@ export const Wrapper = styled.div`
 `;
 
 export const Info = styled.span`
-  margin-right: 30px;
+  margin-right: 70px;
 `;
 
 export const InputName = styled.div`
-  width: 750px;
+  width: 650px;
   height: 30px;
   border: 0.5px solid #000;
   border-radius: 5px;

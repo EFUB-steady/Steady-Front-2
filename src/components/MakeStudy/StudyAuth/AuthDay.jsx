@@ -15,13 +15,13 @@ export default function AuthDay() {
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 export const Info = styled.span`
-  margin-left: 50px;
 `;
 
 export const DaySelect = styled.div`
-  padding-left: 90px;
+  padding-left: 74px;
 `;
