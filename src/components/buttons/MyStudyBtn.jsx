@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export default function LogoutBtn() {
-  return <Button>Logout</Button>;
+export default function MyStudyBtn() {
+  return <Button>My Study</Button>;
 }
 
 const Button = styled.button`
@@ -12,5 +12,4 @@ const Button = styled.button`
   font-family: "Pretendard";
   font-size: 18px;
   font-weight: 400;
-  color: grey;
 `;
