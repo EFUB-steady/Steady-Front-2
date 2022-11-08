@@ -5,6 +5,7 @@ import MakeStudyBtn from "../../buttons/MakeStudyBtn";
 import MyInfoBtn from "../../buttons/MyInfoBtn";
 import MyStudyBtn from "../../buttons/MyStudyBtn";
 import { StudyName } from "./styles";
+import NowBtn from "../../buttons/NowBtn";
 
 export default function Header() {
   return (

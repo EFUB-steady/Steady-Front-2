@@ -5,7 +5,6 @@ import LoginPage from "./pages/LoginPage";
 import MyInfoPage from "./pages/MyInfoPage";
 import SignupPage from "./pages/SignupPage";
 import FindUserPage from "./pages/FindUserPage";
-import MemberMainPage from "./pages/MainPage/MemberMainPage";
 import MakeStudyPage from "./pages/MakeStudyPage/";
 
 export default function App() {
