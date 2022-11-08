@@ -1,17 +1,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import routes from "./routes/routes";
+import MemberMainPage from "./pages/MainPage/MemberMainPage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import FindUserPage from "./pages/FindUserPage";
 import MemberMainPage from "./pages/MainPage/MemberMainPage";
 import MakeStudyPage from "./pages/MakeStudyPage/";
-import routes from "./routes/routes";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path={routes.MAIN} element={<MemberMainPage />} />
+        <Route path={routes.LOGIN} element={<LoginPage />} />
+        <Route path={routes.SIGNUP} element={<SignupPage />} />
+        <Route path={routes.FINDUSER} element={<FindUserPage />} />
         <Route path={routes.MAKESTUDY} element={<MakeStudyPage />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;
