@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
 
 export const StudyInfoWrapper = styled.div`
   height: 50%;
+  flex-direction: row;
 `;
 
 export const MyInfoWrapper = styled.div`
