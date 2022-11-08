@@ -6,7 +6,7 @@ export const Bold = styled.div`
   //font-family: "Pretendard";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 16px;
   line-height: 100%;
   width: 155px;
   height: 42px;
@@ -19,7 +19,7 @@ export const Body1 = styled.div`
   //font-family: "Pretendard";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 100%;
   width: 155px;
   height: 42px;
@@ -32,7 +32,7 @@ export const Body2 = styled.div`
   //font-family: "Pretendard";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 13px;
   line-height: 100%;
   width: 155px;
   height: 42px;
