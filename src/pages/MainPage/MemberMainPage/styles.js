@@ -1,16 +1,29 @@
-export const Header = styled.header`
-  height: 64px;
-  display: flex;
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
+  margin-left: 30px;
+  margin-right: 30px;
+  margin: 30px;
+`;
+
+export const Container = styled.div`
   width: 100%;
-  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
-  box-shadow: 0 1px 0 var(--saf-0);
-  padding: 20px 16px 20px 20px;
-  font-weight: bold;
-  align-items: center;
-  
-  & .header-right {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    align-items: center;
+  height: 100%;
+  flex-direction: column;
+  flex: 1;
+  margin: 30px;
+`;
+
+export const LeftContainer = styled.div`
+  width: 60%;
+  float: left;
+`;
+
+export const RightContainer = styled.div`
+  width: 40%;
+  float: left;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 120px;
 `;
