@@ -1,7 +1,9 @@
 const routes = {
   MAIN: "/",
-  LOGIN: "/Login",
-  MYINFO: "/MyInfo",
+  LOGIN: "/login",
+  SIGNUP: "/signup",
+  FINDUSER: "/finduser",
+  MYINFO: "/myinfo",
 };
 
 export default routes;
