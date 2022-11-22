@@ -7,7 +7,12 @@ export const StudyList = styled.div`
   justify-content: space-between;
 `;
 
-export const Wrapper = styled.div`
+export const BtnWrapper = styled.div`
   display: flex;
   flex-direction: row;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

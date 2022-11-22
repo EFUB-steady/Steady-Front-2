@@ -6,6 +6,7 @@ import EntireStudy from "../../components/MyInfoPage/EntireStudy";
 import EstablishedStudy from "../../components/MyInfoPage/EstablishedStudy";
 import MyInfo from "../../components/MyInfoPage/MyInfo";
 import { DivideLine } from "./styles";
+import { Bold } from "../../styles/text";
 
 export default function MemberMainPage() {
   return (
@@ -13,9 +14,8 @@ export default function MemberMainPage() {
       <Wrapper>
         <Header />
         <DivideLine />
-
         <StudyInfoWrapper>
-          <p>스터디 정보</p>
+          <Bold>스터디 정보</Bold>
           <EntireStudy />
           <EstablishedStudy />
         </StudyInfoWrapper>

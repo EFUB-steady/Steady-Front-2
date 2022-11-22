@@ -1,11 +1,13 @@
 import styled from "styled-components";
 export const Wrapper = styled.div`
-  margin-left: 30px;
-  margin-right: 30px;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+  width: 100%;
 `;
 
 export const StudyInfoWrapper = styled.div`
   height: 50%;
+  display: flex;
   flex-direction: row;
 `;
 
