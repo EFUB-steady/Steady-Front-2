@@ -3,10 +3,10 @@ import { Column, TextButton, Row } from "./styles";
 import LoginBtn from "../../buttons/LoginBtn";
 import { useNavigate } from "react-router-dom";
 import routes from "../../../routes/routes";
-import useLoginInput from "../../../data/auth/useAuth";
+import { useLoginInput } from "../../../api/recoil/loginInput/useLogin";
 
 export default function LoginInput() {
-  const [email, setEmail, password, setPassword] = useLoginInput();
+  const { email, setEmail, password, setPassword } = useLoginInput();
   let navigate = useNavigate();
 
   return (

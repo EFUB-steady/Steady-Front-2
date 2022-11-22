@@ -6,7 +6,7 @@ export default function LoginBtn() {
   // const { loginReset } = useLoginInput();
 
   const loginHandler = async () => {
-    await AuthService.getToken()
+    await AuthService.getAccessToken()
       .then((res) => {
         console.log("success");
       })

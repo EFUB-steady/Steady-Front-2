@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "../../../assests/SteadyDay_logo.png";
+import logo from "../../../assets/LogoHorizontal.png";
 import LogoutBtn from "../../buttons/LogoutBtn";
 import MakeStudyBtn from "../../buttons/MakeStudyBtn";
 import MyInfoBtn from "../../buttons/MyInfoBtn";

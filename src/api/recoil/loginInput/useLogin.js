@@ -1,8 +1,8 @@
 import { useRecoilState } from "recoil";
-import { IsLoginState, loginInputState } from "./AuthState";
+import { IsLoginState, loginInputState } from "./LoginState";
 
 // 로그인을 위한 입력 시 활용
-export default function useLoginInput() {
+export const useLoginInput = () => {
   const [loginInput, setLoginInput] = useRecoilState(loginInputState);
 
   const setEmail = (email) => {
@@ -33,7 +33,7 @@ export default function useLoginInput() {
     setPassword,
     loginReset,
   };
-}
+};
 
 // 로그인 여부 (true/false) 저장 시 활용
 export const useIsLogin = () => {
