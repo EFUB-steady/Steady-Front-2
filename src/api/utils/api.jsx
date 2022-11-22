@@ -1,9 +1,12 @@
 import axios from "axios";
-import { BASE_URL } from "../constants/config";
+import { ACCESS_TOKEN, BASE_URL } from "../constants/config";
 
-// const token = localStorage.getItem("accessToken");
+export const getToken = () => {
+  var token = localStorage.getItem(ACCESS_TOKEN);
+  return token;
+};
 
-export const getAccessToken = axios.create({
+export const axiosInstance = axios.create({
   baseURL: BASE_URL,
   headers: {
     "Content-Type": "application/json",
