@@ -1,5 +1,6 @@
-import { axiosInstance } from "../utils/api";
+import { getAccessToken } from "../utils/api";
 
 export const AuthService = {
-  getAccessToken: () => axiosInstance.get("/users/login"),
+  getAccessToken: async (email, password) =>
+    getAccessToken.post("/users/login", { email: email, password: password }),
 };

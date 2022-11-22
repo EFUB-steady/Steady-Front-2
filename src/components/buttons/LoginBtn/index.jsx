@@ -1,45 +1,24 @@
 import styled from "styled-components";
 import { ewhaGreen, gray400 } from "../../../styles/colors";
+import { useLoginInput } from "../../../api/recoil/loginInput/useLogin";
+import { ACCESS_TOKEN } from "../../../api/constants/config";
 import { AuthService } from "../../../api/services/AuthService";
 
 export default function LoginBtn() {
-  // const { loginReset } = useLoginInput();
-
+  const { email, password } = useLoginInput();
   const loginHandler = async () => {
-    await AuthService.getAccessToken()
+    await AuthService.getAccessToken(email, password)
       .then((res) => {
-        console.log("success");
+        localStorage.setItem(ACCESS_TOKEN, res.data.accessToken); // accessToken을 localStorage에 저장
       })
       .catch((err) => {
         console.log("err:", err);
       });
   };
 
-  // const { userAPI } = useUserAPI({
-  //   onSuccess: () => {
-  //     console.log("success");
-  //   },
-  //   onFail: () => {
-  //     console.log("fail");
-  //   },
-  // });
-
-  // const loginHandler = () => {
-  //   loginAPI({
-  //     onSuccess: () => {
-  //       loginReset();
-  //       userAPI();
-  //     },
-  //     onFail: () => {
-  //       console.log("fail");
-  //     },
-  //   });
-  // };
-
-  // if (isLoginLoading) return <div>Loading..</div>;
   return (
     <>
-      <LoginButton onClick={loginHandler}>로그인</LoginButton>;
+      <LoginButton onClick={loginHandler}>로그인</LoginButton>
     </>
   );
 }
