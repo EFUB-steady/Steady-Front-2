@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function StudyName() {
+export default function StudyNotice() {
   return (
     <Wrapper>
-      <Info>스터디 이름</Info>
-      <InputName />
+      <Info>설명 및 공지사항</Info>
+      <InputNotice />
     </Wrapper>
   );
 }
@@ -16,12 +16,12 @@ export const Wrapper = styled.div`
 `;
 
 export const Info = styled.span`
-  margin-right: 70px;
+  margin-right: 35px;
 `;
 
-export const InputName = styled.div`
+export const InputNotice = styled.div`
   width: 650px;
-  height: 30px;
+  height: 120px;
   border: 0.5px solid #000;
   border-radius: 5px;
 `;
