@@ -1,13 +1,12 @@
-import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Column, TextButton, Row } from "./styles";
 import LoginBtn from "../../buttons/LoginBtn";
 import { useNavigate } from "react-router-dom";
 import routes from "../../../routes/routes";
+import { useLoginInput } from "../../../api/recoil/loginInput/useLogin";
 
 export default function LoginInput() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const { email, setEmail, password, setPassword } = useLoginInput();
   let navigate = useNavigate();
 
   return (
