@@ -8,7 +8,7 @@ import MyInfo from "../../components/MyInfoPage/MyInfo";
 import { DivideLine } from "./styles";
 import { Bold } from "../../styles/text";
 
-export default function MemberMainPage() {
+export default function MyInfoPage() {
   return (
     <Container>
       <Wrapper>
