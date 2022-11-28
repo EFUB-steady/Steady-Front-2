@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 10%;
 `;
 
 export const ExBtnWrapper = styled.div`
