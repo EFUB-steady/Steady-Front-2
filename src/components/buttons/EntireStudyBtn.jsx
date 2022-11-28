@@ -10,6 +10,6 @@ const Button = styled.button`
   background: white;
   border: white;
   font-family: "Pretendard";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 `;

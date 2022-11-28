@@ -3,8 +3,11 @@ import { Bold, Body1 } from "../../../styles/text";
 
 import React from "react";
 import ModifyBtn from "./../../buttons/ModifyBtn";
-
+import routes from "../../../routes/routes";
+import { useNavigate } from "react-router-dom";
+import { GreenBtn } from "../../buttons/GreenBtn";
 export default function MyInfo() {
+  let navigate = useNavigate();
   return (
     <Wrapper>
       <ExBtnWrapper>
@@ -32,7 +35,13 @@ export default function MyInfo() {
           </SignBox>
         </ContentWrapper>
       </ExBtnWrapper>
-      <ModifyBtn />
+      <GreenBtn
+        onClick={() => {
+          navigate(routes.MODIFYINFO);
+        }}
+      >
+        수정
+      </GreenBtn>
     </Wrapper>
   );
 }
