@@ -24,7 +24,7 @@ export default function LoginBtn() {
       });
     await AuthService.getUser(userId)
       .then((res) => {
-        setUser(res.data);
+        setUser(res);
         navigate(routes.MAIN);
       })
       .catch((err) => {
