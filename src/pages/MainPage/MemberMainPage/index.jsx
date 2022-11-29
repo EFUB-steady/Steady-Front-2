@@ -6,6 +6,15 @@ import Info from "../../../components/MemberMain/Info";
 import Mcalendar from "../../../components/MCalendar/MCalendar";
 import Auth from "../../../components/MemberMain/Auth";
 
+// 날짜 클릭했을 때 랜더링..
+function Clicking(props) {
+  const isClicked = props.isClicked; //상태
+  if (isClicked) {
+    return <Auth />;
+  }
+  return <Info />;
+}
+
 export default function MemberMainPage() {
   return (
     <Wrapper>
@@ -16,7 +25,7 @@ export default function MemberMainPage() {
           <Mcalendar />
         </LeftContainer>
         <RightContainer>
-          <Auth />
+          <Clicking isClicked={false} />
         </RightContainer>
       </Container>
     </Wrapper>

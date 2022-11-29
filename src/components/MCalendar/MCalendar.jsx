@@ -14,8 +14,6 @@ function NavigationLabel(month) {
   );
 }
 
-// 날짜 클릭했을 때 랜더링..
-
 function Mcalendar() {
   const [value, onChange] = useState(new Date());
   // const { selectedDate, setSelectedDate } = useStudyListDate();
