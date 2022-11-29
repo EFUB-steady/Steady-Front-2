@@ -1,15 +1,26 @@
 import React from "react";
-import { Wrapper } from "./styles";
+import { LeftContainer, RightContainer, Wrapper, Container } from "./styles";
 import DateAndAuth from "../../../components/MemberMain/DateAndAuth";
 import Header from "../../../components/MemberMain/Header";
 import Info from "../../../components/MemberMain/Info";
+import Mcalendar from "../../../components/MCalendar/MCalendar";
+import Auth from "../../../components/MemberMain/Auth";
 
 export default function MemberMainPage() {
   return (
     <Wrapper>
       <Header />
       <DateAndAuth />
-      <Info />
+      <Container>
+        <LeftContainer>
+          <Mcalendar />
+        </LeftContainer>
+        <RightContainer>
+          <Auth />
+        </RightContainer>
+      </Container>
     </Wrapper>
   );
 }
+
+//기본 메인 화면에서 캘린더 날짜 누르면 인증한 목록으로 부분 랜더링

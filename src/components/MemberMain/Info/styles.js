@@ -14,7 +14,7 @@ export const RoundIndex = styled.div`
 
 export const Box = styled.div`
   width: 550px;
-  height: 140px;
+  height: relative;
   background: #00462a;
   border-radius: 5px;
 
@@ -30,9 +30,6 @@ export const Box = styled.div`
   top: -40px;
 `;
 
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row-reverse;
-`;
+export const Wrapper = styled.div``;
 
 export const InfoWrapper = styled.div``;
