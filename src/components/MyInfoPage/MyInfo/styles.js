@@ -9,9 +9,16 @@ export const SignBox = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 `;
 
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 10%;
+`;
+
+export const ExBtnWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
 `;

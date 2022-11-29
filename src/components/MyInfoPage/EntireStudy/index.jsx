@@ -2,17 +2,17 @@ import React from "react";
 import ShortcutBtn from "../../buttons/ShortcutBtn";
 import EntireStudyBtn from "./../../buttons/EntireStudyBtn";
 import EstablishedStudyBtn from "./../../buttons/EstablishedStudyBtn";
-import { StudyList, Wrapper } from "./styles";
+import { StudyList, BtnWrapper, Wrapper } from "./styles";
 import { Bold, Body2 } from "./../../../styles/text";
 import { ContentWrapper } from "../MyInfo/styles";
 
 export default function EntireStudy() {
   return (
-    <>
-      <Wrapper>
+    <Wrapper>
+      <BtnWrapper>
         <EntireStudyBtn />
         <EstablishedStudyBtn />
-      </Wrapper>
+      </BtnWrapper>
       <ContentWrapper>
         <StudyList>
           <Body2>TMI</Body2>
@@ -27,6 +27,6 @@ export default function EntireStudy() {
           <ShortcutBtn />
         </StudyList>
       </ContentWrapper>
-    </>
+    </Wrapper>
   );
 }
