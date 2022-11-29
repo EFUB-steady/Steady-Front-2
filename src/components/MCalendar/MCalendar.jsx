@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, render } from "react";
 import styled from "styled-components";
 import "./reset.css";
 import Calendar from "react-calendar";
 import Auth from "../MemberMain/Auth/index";
-// import { useStudyListDate } from "../../feature/studylist/recoil/useStudyListDate";
+import { useStudyListDate } from "../../feature/studylist/recoil/useStudyListDate";
 // import { useStudyListByDateAPI } from "../../feature/studies/studyListByDate/useStudyListByDateAPI"
 
 function NavigationLabel(month) {
@@ -16,10 +16,18 @@ function NavigationLabel(month) {
 
 function Mcalendar() {
   const [value, onChange] = useState(new Date());
-  // const { selectedDate, setSelectedDate } = useStudyListDate();
+  const today = new Date();
+  const { selectedDate, setSelectedDate } = useStudyListDate();
   // const { studyListByDateAPI } = useStudyListByDateAPI();
   // const [isOpen, setIsOpen] = useState(false);
   // const [isSpinner, setIsSpinner] = useState(false);
+
+  useEffect(() => {
+    if (selectedDate.toDateString() != today.toDateString()) {
+      render(<Auth />);
+    }
+    [selectedDate];
+  });
 
   // useEffect(() => {
   //   setIsSpinner(true);
@@ -37,7 +45,6 @@ function Mcalendar() {
         // onChange={setSelectedDate}
         value={value}
         onChange={onChange}
-        // onClickDay={<Auth />}
         locale={"en"}
         calendarType={"US"}
         showNeighboringMonth
