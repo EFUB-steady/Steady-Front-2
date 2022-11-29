@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../../assets/LogoHorizontal.png";
 import LoginInput from "../../../components/LoginPage/LoginInput";
+import KakaoLoginBtn from "../../buttons/KakaoLoginBtn";
 import { Column, LogoImg, Row } from "./styles";
 
 export default function LoginArea() {
@@ -9,6 +10,7 @@ export default function LoginArea() {
       <Column>
         <LogoImg src={logo} />
         <LoginInput />
+        <KakaoLoginBtn />
       </Column>
     </Row>
   );
