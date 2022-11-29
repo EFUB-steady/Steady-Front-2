@@ -6,10 +6,10 @@ export const Bold = styled.div`
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 100%;
   width: 155px;
-  height: 42px;
+  height: 30px;
   display: flex;
   align-items: center;
   margin-left: 45px;

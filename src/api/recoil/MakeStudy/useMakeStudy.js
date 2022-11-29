@@ -12,10 +12,10 @@ export const useMakeStudy = () => {
     }));
   };
 
-  const setDescription = (description) => {
+  const setSummary = (summary) => {
     setMakeStudy((input) => ({
       ...input,
-      description: description,
+      summary: summary,
     }));
   };
 
@@ -104,7 +104,7 @@ export const useMakeStudy = () => {
 
   return {
     name: makeStudy.name,
-    description: makeStudy.description,
+    summary: makeStudy.summary,
     mon: makeStudy.mon,
     tue: makeStudy.tue,
     wed: makeStudy.wed,
@@ -120,7 +120,7 @@ export const useMakeStudy = () => {
     money: makeStudy.money,
     lateMoney: makeStudy.lateMoney,
     setName,
-    setDescription,
+    setSummary,
     setMon,
     setTue,
     setWed,
