@@ -5,6 +5,7 @@ const routes = {
   FINDUSER: "/finduser",
   MYINFO: "/myinfo",
   MODIFYINFO: "/modifyinfo",
+  MAKESTUDY: "/makestudy",
 };
 
 export default routes;
