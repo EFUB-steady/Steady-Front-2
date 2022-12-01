@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import SaveBtn from "../../components/buttons/SaveBtn";
 import AuthDay from "../../components/MakeStudy/StudyAuth/AuthDay";
 import Penalty from "../../components/MakeStudy/StudyAuth/Penalty";
 import StudyInfo from "../../components/MakeStudy/StudyInfo";
 import Header from "../../components/MemberMain/Header";
-import { DivideLine, InputWrapper, Bold, Button } from "./styles";
+import { DivideLine, InputWrapper, Bold} from "./styles";
 
 export default function MakeStudyPage() {
   return (
     <>
       <Container style={{ padding: "1%" }}>
         <Header />
-        <Button>개설하기</Button>
+        <SaveBtn/>
         <DivideLine />
         <Container>
           <Wrapper>

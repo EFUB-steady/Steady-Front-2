@@ -1,8 +1,36 @@
 import styled from "styled-components";
+import Modal from "../modals/index";
 import { ewhaGreen } from "../../styles/colors";
+import { useState } from "react";
 
 export default function SaveBtn() {
-  return <Button>저장하기</Button>;
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+  const YesModal = () => {
+    setModalOpen(false);
+  };
+
+  return (
+    <>
+      <Button onClick={openModal}>저장하기</Button>
+      <Modal
+        open={modalOpen}
+        close={closeModal}
+        header={"스터디를 개설하시겠습니까?"}
+      >
+        <ButtonWrapper>
+          <YesBtn onClick={YesModal}>확인</YesBtn>
+          <CloseButton onClick={closeModal}>취소</CloseButton>
+        </ButtonWrapper>
+      </Modal>
+    </>
+  );
 }
 
 const Button = styled.button`
@@ -18,4 +46,45 @@ const Button = styled.button`
   font-weight: 700;
   font-size: 14px;
   color: white;
+
+  margin-left: 75%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+`;
+
+const YesBtn = styled.button`
+  width: 108px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 5%;
+
+  background: ${ewhaGreen};
+  border: #00462a;
+  text-align: center;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+`;
+
+const CloseButton = styled.button`
+  width: 108px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 5%;
+
+  background: #b4b3b3;
+  border: #b4b3b3;
+  text-align: center;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `;

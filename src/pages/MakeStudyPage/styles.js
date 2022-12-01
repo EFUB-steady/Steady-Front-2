@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ewhaGreen } from "../../styles/colors";
 
 export const Bold = styled.span`
   font-family: "Pretendard";
@@ -11,23 +10,6 @@ export const Bold = styled.span`
   display: flex;
   justify-content: flex-start;
   min-width: 20%;
-`;
-
-export const Button = styled.button`
-  width: 108px;
-  height: 40px;
-  border-radius: 5px;
-  background: ${ewhaGreen};
-  border: #00462a;
-  text-align: center;
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  color: white;
-  margin-left: 75%;
-  margin-bottom: 1%;
-  margin-top: 1%;
 `;
 
 export const InputWrapper = styled.span`

@@ -26,5 +26,4 @@ export const ModalMain = styled.div`
   flex-direction: column;
   border-top: 1px solid #dee2e6;
   justify-content: space-between;
-  align-items: flex-end;
 `;
