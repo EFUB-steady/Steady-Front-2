@@ -1,15 +1,14 @@
 import { TextField } from "@mui/material";
 import React from "react";
-import { useState } from "react";
 import styled from "styled-components";
+import { useMakeStudy } from "../../api/recoil/MakeStudy/useMakeStudy";
 
 export default function StudyInfo() {
-  const [name, setName] = useState("");
-  const [summary, setSummary] = useState("");
+  const { name, setName, summary, setSummary } = useMakeStudy();
 
   return (
     <>
-      <Column >
+      <Column>
         <Row>
           <Info>스터디 이름</Info>
           <Column>

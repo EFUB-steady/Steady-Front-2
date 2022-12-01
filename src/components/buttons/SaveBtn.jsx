@@ -5,15 +5,16 @@ import { useState } from "react";
 
 export default function SaveBtn() {
   const [modalOpen, setModalOpen] = useState(false);
-
   const openModal = () => {
     setModalOpen(true);
   };
   const closeModal = () => {
     setModalOpen(false);
   };
-  const YesModal = () => {
+  const makeStudy = async () => {
     setModalOpen(false);
+
+    
   };
 
   return (
@@ -25,7 +26,7 @@ export default function SaveBtn() {
         header={"스터디를 개설하시겠습니까?"}
       >
         <ButtonWrapper>
-          <YesBtn onClick={YesModal}>확인</YesBtn>
+          <YesBtn onClick={makeStudy}>확인</YesBtn>
           <CloseButton onClick={closeModal}>취소</CloseButton>
         </ButtonWrapper>
       </Modal>
@@ -50,6 +51,10 @@ const Button = styled.button`
   margin-left: 75%;
   margin-bottom: 10px;
   margin-top: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const YesBtn = styled.button`
@@ -66,6 +71,10 @@ const YesBtn = styled.button`
   font-weight: 700;
   font-size: 14px;
   color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const CloseButton = styled.button`
@@ -82,6 +91,10 @@ const CloseButton = styled.button`
   font-weight: 700;
   font-size: 14px;
   color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ButtonWrapper = styled.div`
