@@ -9,7 +9,7 @@ export default function StudyInfo() {
 
   return (
     <>
-      <Column>
+      <Column >
         <Row>
           <Info>스터디 이름</Info>
           <Column>
@@ -61,4 +61,3 @@ export const Info = styled.span`
   font-size: 16px;
   min-width: 20%;
 `;
-

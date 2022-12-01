@@ -2,18 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { ewhaGreen } from "../../styles/colors";
 
-export const Bold = styled.div`
+export const Bold = styled.span`
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  line-height: 100%;
-  width: 155px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  margin-left: 45px;
   margin-top: 45px;
+  display: flex;
+  justify-content: flex-start;
+  min-width: 20%;
 `;
 
 export const Button = styled.button`
@@ -28,15 +25,17 @@ export const Button = styled.button`
   font-weight: 700;
   font-size: 14px;
   color: white;
-  margin-left: 1090px;
+  margin-left: 75%;
+  margin-bottom: 1%;
+  margin-top: 1%;
 `;
 
-export const InputWrapper = styled.div`
+export const InputWrapper = styled.span`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 90%;
-  margin-left: 250px;
+  justify-content: center;
+  width: 80%;
+  padding-top: 50px;
 `;
 
 export const DivideLine = styled.hr`
