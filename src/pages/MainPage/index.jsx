@@ -11,7 +11,7 @@ export default function MainPage() {
   return (
     <Container>
       <Wrapper>
-        <Header />
+        <Header>스터디</Header>
         <DateAndAuth />
         <Info />
       </Wrapper>

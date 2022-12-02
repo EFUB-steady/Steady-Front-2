@@ -5,14 +5,14 @@ import AuthDay from "../../components/MakeStudy/StudyAuth/AuthDay";
 import Penalty from "../../components/MakeStudy/StudyAuth/Penalty";
 import StudyInfo from "../../components/MakeStudy/StudyInfo";
 import Header from "../../components/MemberMain/Header";
-import { DivideLine, InputWrapper, Bold} from "./styles";
+import { DivideLine, InputWrapper, Bold } from "./styles";
 
 export default function MakeStudyPage() {
   return (
     <>
       <Container style={{ padding: "1%" }}>
-        <Header />
-        <SaveBtn/>
+        <Header>Make Study</Header>
+        <SaveBtn />
         <DivideLine />
         <Container>
           <Wrapper>

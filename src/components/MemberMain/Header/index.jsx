@@ -7,13 +7,12 @@ import MyStudyBtn from "../../buttons/MyStudyBtn";
 
 import { LogoImg, StudyName, BtnWrapper, Wrapper } from "./styles";
 
-export default function Header() {
+export default function Header({ children }) {
   return (
     <>
       <Wrapper>
         <LogoImg src={logo} />
-        {/* <NowBtn /> */}
-        <StudyName>현재 페이지</StudyName>
+        <StudyName>{children}</StudyName>
         <BtnWrapper>
           <MyStudyBtn />
           <MakeStudyBtn />

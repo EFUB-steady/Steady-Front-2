@@ -12,7 +12,7 @@ export default function MyInfoPage() {
   return (
     <Container>
       <Wrapper>
-        <Header />
+        <Header>My Info</Header>
         <DivideLine />
         <StudyInfoWrapper>
           <Bold>스터디 정보</Bold>
