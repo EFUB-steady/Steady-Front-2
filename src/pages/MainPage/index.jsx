@@ -11,7 +11,7 @@ export default function MainPage() {
   return (
     <Container>
       <Wrapper>
-        <Header />
+        <Header>My Study</Header>
         <DateAndAuth />
         <Info />
       </Wrapper>
