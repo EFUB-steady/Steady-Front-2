@@ -4,6 +4,7 @@ const routes = {
   SIGNUP: "/signup",
   FINDUSER: "/finduser",
   MYINFO: "/myinfo",
+  MAKESTUDY: "makestudy/",
   MODIFYINFO: "/modifyinfo",
 };
 
