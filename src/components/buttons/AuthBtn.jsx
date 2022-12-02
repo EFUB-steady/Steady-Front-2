@@ -48,6 +48,10 @@ const Button = styled.button`
   font-weight: 700;
   font-size: 14px;
   color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const CloseButton = styled.button`

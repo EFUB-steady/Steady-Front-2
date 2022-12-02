@@ -14,7 +14,7 @@ export default function ModifyInfoPage() {
   return (
     <Container>
       <Wrapper>
-        <Header />
+        <Header>Modify My Info</Header>
         <DivideLine />
         <TitleWrapper>
           <Bold>내 정보 수정</Bold>

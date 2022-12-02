@@ -12,4 +12,8 @@ const Button = styled.button`
   font-family: "Pretendard";
   font-size: 18px;
   font-weight: 400;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
