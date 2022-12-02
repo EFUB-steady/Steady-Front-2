@@ -1,28 +1,120 @@
 import React from "react";
 import styled from "styled-components";
-import { ewhaGreen } from "../../styles/colors";
+import { useMakeStudy } from "../../../api/recoil/MakeStudy/useMakeStudy";
+import { ewhaGreen } from "../../../styles/colors";
 
 export default function AuthDay() {
+  const {
+    mon,
+    tue,
+    wed,
+    thu,
+    fri,
+    sat,
+    sun,
+    setMon,
+    setTue,
+    setWed,
+    setThu,
+    setFri,
+    setSat,
+    setSun,
+  } = useMakeStudy();
+
+  const DAYS = [
+    {
+      day: "Sun",
+      isClicked: sun,
+      onClick: () => {
+        setSun(!sun);
+      },
+    },
+    {
+      day: "Mon",
+      isClicked: mon,
+      onClick: () => {
+        console.log("mon");
+        setMon(!mon);
+      },
+    },
+    {
+      day: "Tue",
+      isClicked: tue,
+      onClick: () => {
+        console.log("tue");
+        setTue(!tue);
+      },
+    },
+    {
+      day: "Wed",
+      isClicked: wed,
+      onClick: () => {
+        console.log("wed");
+        setWed(!wed);
+      },
+    },
+    {
+      day: "Thu",
+      isClicked: thu,
+      onClick: () => {
+        console.log("thu");
+        setThu(!thu);
+      },
+    },
+    {
+      day: "Fri",
+      isClicked: fri,
+      onClick: () => {
+        console.log("fri");
+        setFri(!fri);
+      },
+    },
+    {
+      day: "Sat",
+      isClicked: sat,
+      onClick: () => {
+        console.log("sat");
+        setSat(!sat);
+      },
+    },
+  ];
+
   return (
-    <>
-      <Row>
-        <Info>인증 요일</Info>
-        <DayRow>
-          <DaySelect>SUN </DaySelect>
-          <DaySelect>MON</DaySelect>
-          <DaySelect>TUE</DaySelect>
-          <DaySelect>WED</DaySelect>
-          <DaySelect>THU</DaySelect>
-          <DaySelect>FRI</DaySelect>
-          <DaySelect>SAT</DaySelect>
-        </DayRow>
-      </Row>
-    </>
+    <Wrapper>
+      <Info>인증 요일</Info>
+      {DAYS.map((day) => (
+        <DaySelect
+          key={day.day}
+          isClicked={day.isClicked}
+          onClick={day.onClick}
+        >
+          {day.day}
+        </DaySelect>
+      ))}
+    </Wrapper>
   );
 }
 
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+export const Info = styled.div`
+  display: flex;
+  margin-right: 40px;
+  font-size: 16px;
+`;
+
 export const DaySelect = styled.div`
-  margin-right: 7%;
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: ${(props) => props.isClicked && ewhaGreen};
+  color: ${(props) => props.isClicked && "white"};
   &:hover {
     background-color: ${ewhaGreen};
     color: white;
@@ -34,29 +126,4 @@ export const DaySelect = styled.div`
     color: white;
     cursor: pointer;
   }
-`;
-
-export const DayRow = styled.div`
-  display: flex;
-  min-width: 90%;
-`;
-
-export const Row = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 30px;
-`;
-
-export const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-right: 10%;
-  min-width: 80%;
-`;
-
-export const Info = styled.span`
-  display: flex;
-  font-size: 16px;
-  min-width: 18%;
 `;
