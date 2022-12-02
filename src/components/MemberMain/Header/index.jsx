@@ -10,10 +10,9 @@ import { LogoImg, StudyName, BtnWrapper, Wrapper } from "./styles";
 export default function Header() {
   return (
     <>
-      <LogoutBtn />
       <Wrapper>
         <LogoImg src={logo} />
-       {/* <NowBtn /> */}
+        {/* <NowBtn /> */}
         <StudyName>현재 페이지</StudyName>
         <BtnWrapper>
           <MyStudyBtn />
