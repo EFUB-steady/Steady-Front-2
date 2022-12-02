@@ -1,7 +1,18 @@
 import styled from "styled-components";
-
+import { useNavigate } from "react-router-dom";
+import routes from "../../routes/routes";
 export default function MyInfoBtn() {
-  return <Button>My Info</Button>;
+  let navigate = useNavigate();
+
+  return (
+    <Button
+      onClick={() => {
+        navigate(routes.MYINFO);
+      }}
+    >
+      My Info
+    </Button>
+  );
 }
 
 const Button = styled.button`

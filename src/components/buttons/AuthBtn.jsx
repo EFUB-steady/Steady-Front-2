@@ -87,5 +87,5 @@ const ButtonWrapper = styled.div`
   display: flex;
   flex-grow: 1;
   margin-bottom: 30px;
-  margin-right: 40px;
+  margin-left: 60%;
 `;

@@ -1,37 +1,48 @@
 import React from "react";
 import styled from "styled-components";
+import SaveBtn from "../../components/buttons/SaveBtn";
 import AuthDay from "../../components/MakeStudy/StudyAuth/AuthDay";
 import Penalty from "../../components/MakeStudy/StudyAuth/Penalty";
-import StudyName from "../../components/MakeStudy/StudyInfo/StudyName";
-import StudyNotice from "../../components/MakeStudy/StudyInfo/StudyNotice";
+import StudyInfo from "../../components/MakeStudy/StudyInfo";
 import Header from "../../components/MemberMain/Header";
-import { DivideLine, InputWrapper, Bold, Button } from "./styles";
+import { DivideLine, InputWrapper, Bold} from "./styles";
 
 export default function MakeStudyPage() {
   return (
     <>
-      <Header /> 
-      <Button>수정하기</Button>
-      <DivideLine />
-      <Bold>스터디 정보</Bold>
-
-      <InputWrapper>
-        <StudyName />
-        <StudyNotice />
-      </InputWrapper>
-
-      <DivideLine />
-      <Bold>스터디 인증</Bold>
-      <InputWrapper>
-        <AuthDay />
-        <Penalty />
-      </InputWrapper>
+      <Container style={{ padding: "1%" }}>
+        <Header />
+        <SaveBtn/>
+        <DivideLine />
+        <Container>
+          <Wrapper>
+            <Bold>스터디 정보</Bold>
+            <InputWrapper>
+              <StudyInfo />
+            </InputWrapper>
+          </Wrapper>
+          <DivideLine />
+          <Wrapper>
+            <Bold>스터디 인증</Bold>
+            <InputWrapper>
+              <AuthDay />
+              <Penalty />
+            </InputWrapper>
+          </Wrapper>
+        </Container>
+      </Container>
     </>
   );
 }
 
-export const StudyInfo = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  width: 20%;
+  padding-left: 15%;
+  padding-right: 10%;
+`;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;

@@ -95,15 +95,25 @@ export default function AuthDay() {
   );
 }
 
-export const Wrapper = styled.div`
+export const DaySelect = styled.div`
+  margin-right: 7%;
+  &:hover {
+    background-color: ${ewhaGreen};
+    color: white;
+    cursor: pointer;
+  }
+`;
+
+export const DayRow = styled.div`
   display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  min-width: 90%;
 `;
 
 export const Info = styled.div`
+  display:flex;
   margin-right: 50px;
+  font-size: 16px;
+  min-width: 18%;
 `;
 
 export const DaySelect = styled.div`
@@ -114,4 +124,17 @@ export const DaySelect = styled.div`
   border-radius: 5px;
   background-color: ${(props) => props.isClicked && ewhaGreen};
   color: ${(props) => props.isClicked && "white"};
+
+export const Row = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30px;
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  min-width: 80%;
 `;

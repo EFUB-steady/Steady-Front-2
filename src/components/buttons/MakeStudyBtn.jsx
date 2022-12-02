@@ -1,7 +1,18 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+import routes from "../../routes/routes";
 
 export default function MakeStudyBtn() {
-  return <Button>Make Study</Button>;
+  let navigate = useNavigate();
+  return (
+    <Button
+      onClick={() => {
+        navigate(routes.MAKESTUDY);
+      }}
+    >
+      Make Study
+    </Button>
+  );
 }
 
 const Button = styled.button`

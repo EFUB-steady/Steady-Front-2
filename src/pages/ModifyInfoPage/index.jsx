@@ -2,7 +2,7 @@ import React from "react";
 import { Wrapper, InputWrapper, TitleWrapper, DivideLine } from "./styles";
 import Container from "../../components/common/Container";
 import Header from "../../components/MemberMain/Header";
-import SignupInput from "../../components/SignupPage/SignupInput";
+import ModifyInfoInput from "../../components/ModifyInfoInput";
 import { useNavigate } from "react-router-dom";
 import routes from "../../routes/routes";
 import SaveBtn from "./../../components/buttons/SaveBtn";
@@ -27,7 +27,7 @@ export default function ModifyInfoPage() {
           </GreenBtn>
         </TitleWrapper>
         <InputWrapper>
-          <SignupInput />
+          <ModifyInfoInput />
         </InputWrapper>
       </Wrapper>
     </Container>
