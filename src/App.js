@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import routes from "./routes/routes";
-import MemberMainPage from "./pages/MainPage/MemberMainPage";
+import MainPage from "./pages/MainPage";
 import LoginPage from "./pages/LoginPage";
 import MyInfoPage from "./pages/MyInfoPage";
 import SignupPage from "./pages/SignupPage";
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={routes.MAIN} element={<MemberMainPage />} />
+        <Route path={routes.MAIN} element={<MainPage />} />
         <Route path={routes.LOGIN} element={<LoginPage />} />
         <Route path={routes.MYINFO} element={<MyInfoPage />} />
         <Route path={routes.SIGNUP} element={<SignupPage />} />
