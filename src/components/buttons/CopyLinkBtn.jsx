@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { ewhaGreen } from "../../styles/colors";
 
-export default function ShortcutBtn() {
-  return <Button>바로가기</Button>;
+export default function CopyLinkBtn() {
+  return <Button>링크 복사</Button>;
 }
 
 const Button = styled.button`
