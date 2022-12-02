@@ -1,11 +1,12 @@
 import { useRecoilState } from "recoil";
-import { StudylistState } from "./StudylistState";
+import { StudyListState } from "./StudylistState";
 
-export const useStudylist = () => {
-  const [studylist, setStudylist] = useRecoilState(StudylistState);
+//스터디 리스트 hook 필요시
+export const useStudyList = () => {
+  const [studyList, setStudyList] = useRecoilState(StudyListState);
 
   return {
-    studylist,
-    setStudylist,
+    studyList,
+    setStudyList,
   };
 };
