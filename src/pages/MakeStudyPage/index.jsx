@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import SaveBtn from "../../components/buttons/SaveBtn";
-import AuthDay from "../../components/MakeStudy/StudyAuth/AuthDay";
-import Penalty from "../../components/MakeStudy/StudyAuth/Penalty";
+import AuthDay from "../../components/MakeStudy/AuthDay";
+import Penalty from "../../components/MakeStudy/Penalty";
 import StudyInfo from "../../components/MakeStudy/StudyInfo";
 import Header from "../../components/MemberMain/Header";
 import { DivideLine, InputWrapper, Bold } from "./styles";

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ewhaGreen } from "../../../styles/colors";
+import { ewhaGreen } from "../../styles/colors";
 
 export default function AuthDay() {
   return (
