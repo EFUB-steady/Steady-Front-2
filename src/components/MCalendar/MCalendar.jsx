@@ -1,10 +1,8 @@
-import { useState, useEffect, render } from "react";
+import { useState, useEffect, Button } from "react";
 import styled from "styled-components";
 import "./reset.css";
 import Calendar from "react-calendar";
-import Auth from "../MemberMain/Auth/index";
-import { useStudyListDate } from "../../feature/studylist/recoil/useStudyListDate";
-// import { useStudyListByDateAPI } from "../../feature/studies/studyListByDate/useStudyListByDateAPI"
+// import { Clicking } from "../../pages/MainPage/MemberMainPage";
 
 function NavigationLabel(month) {
   return (
@@ -17,34 +15,14 @@ function NavigationLabel(month) {
 function Mcalendar() {
   const [value, onChange] = useState(new Date());
   const today = new Date();
-  const { selectedDate, setSelectedDate } = useStudyListDate();
-  // const { studyListByDateAPI } = useStudyListByDateAPI();
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [isSpinner, setIsSpinner] = useState(false);
-
-  useEffect(() => {
-    if (selectedDate.toDateString() != today.toDateString()) {
-      render(<Auth />);
-    }
-    [selectedDate];
-  });
-
-  // useEffect(() => {
-  //   setIsSpinner(true);
-  //   studyListByDateAPI();
-  //   setTimeout(() => {
-  //     setIsSpinner(false);
-  //     setIsOpen(true);
-  //   }, [2000]);
-  // }, [selectedDate]);
+  const [viewNext, setViewNext] = useState(false);
 
   return (
     <Container>
       <Calendar
-        // value={selectedDate}
-        // onChange={setSelectedDate}
         value={value}
         onChange={onChange}
+        onClickDay={<Button onClick={() => setViewNext(true)} />}
         locale={"en"}
         calendarType={"US"}
         showNeighboringMonth
