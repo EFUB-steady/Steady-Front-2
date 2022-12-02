@@ -19,46 +19,48 @@ export const useMakeStudy = () => {
     }));
   };
 
-  //스터디 인증 요일 setter (이게 맞는지헷갈림)
   const setMon = (mon) => {
-    setMakeStudy(() => ({
-      mon: true,
+    setMakeStudy((input) => ({
+      ...input,
+      mon: mon,
     }));
   };
 
   const setTue = (tue) => {
-    setMakeStudy(() => ({
-      tue: true,
+    setMakeStudy((input) => ({
+      ...input,
+      tue: tue,
     }));
   };
 
   const setWed = (wed) => {
-    setMakeStudy(() => ({
-      wed: true,
+    setMakeStudy((input) => ({
+      ...input,
+      wed: wed,
     }));
   };
-
   const setThu = (thu) => {
-    setMakeStudy(() => ({
-      tuh: true,
+    setMakeStudy((input) => ({
+      ...input,
+      thu: thu,
     }));
   };
-
   const setFri = (fri) => {
-    setMakeStudy(() => ({
-      fri: true,
+    setMakeStudy((input) => ({
+      ...input,
+      fri: fri,
     }));
   };
-
   const setSat = (sat) => {
-    setMakeStudy(() => ({
-      sat: true,
+    setMakeStudy((input) => ({
+      ...input,
+      sat: sat,
     }));
   };
-
   const setSun = (sun) => {
-    setMakeStudy(() => ({
-      sun: true,
+    setMakeStudy((input) => ({
+      ...input,
+      sun: sun,
     }));
   };
 
