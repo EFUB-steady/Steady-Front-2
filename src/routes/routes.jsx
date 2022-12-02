@@ -6,6 +6,7 @@ const routes = {
   MYINFO: "/myinfo",
   MAKESTUDY: "makestudy/",
   MODIFYINFO: "/modifyinfo",
+  MAKESTUDY: "/makestudy",
 };
 
 export default routes;
