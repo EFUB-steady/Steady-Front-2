@@ -2,19 +2,33 @@ import styled from "styled-components";
 import Modal from "../modals/index";
 import { ewhaGreen } from "../../styles/colors";
 import { useState } from "react";
+import { MakeStudyService } from "../../api/services/MakeStudyService";
+import { useMakeStudy } from "../../api/recoil/MakeStudy/useMakeStudy";
+import { ACCESS_TOKEN } from "../../api/constants/config";
 
 export default function SaveBtn() {
+  const { name, summary } = useMakeStudy();
   const [modalOpen, setModalOpen] = useState(false);
+
   const openModal = () => {
     setModalOpen(true);
   };
   const closeModal = () => {
     setModalOpen(false);
   };
-  const makeStudy = async () => {
+  const makeStudyHandler = async () => {
     setModalOpen(false);
 
-    
+    await MakeStudyService.getAccessToken(name, summary)
+      .then((res) => {
+        localStorage.setItem(ACCESS_TOKEN, res.data.accessToken);
+        <Modal open={modalOpen} close={closeModal} header={"스터디 개설 완료"}>
+          확인
+        </Modal>;
+      })
+      .catch((err) => {
+        console.log("MakeStudyError", err);
+      });
   };
 
   return (
@@ -26,7 +40,7 @@ export default function SaveBtn() {
         header={"스터디를 개설하시겠습니까?"}
       >
         <ButtonWrapper>
-          <YesBtn onClick={makeStudy}>확인</YesBtn>
+          <YesBtn onClick={makeStudyHandler}>확인</YesBtn>
           <CloseButton onClick={closeModal}>취소</CloseButton>
         </ButtonWrapper>
       </Modal>

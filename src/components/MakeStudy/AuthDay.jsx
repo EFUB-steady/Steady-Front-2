@@ -28,6 +28,12 @@ export const DaySelect = styled.div`
     color: white;
     cursor: pointer;
   }
+
+  &:active {
+    background-color: ${ewhaGreen};
+    color: white;
+    cursor: pointer;
+  }
 `;
 
 export const DayRow = styled.div`
