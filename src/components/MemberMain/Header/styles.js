@@ -12,7 +12,11 @@ export const StudyName = styled.div`
   margin-top: 13px;
 `;
 
-export const LogoImg = styled.img``;
+export const LogoImg = styled.img`
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 export const Wrapper = styled.div`
   display: flex;
