@@ -1,15 +1,25 @@
 import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Column, Row, Text, SmallText } from "./styles";
-import EmailInput from "../EmailInput";
+import useSignupInput from "../../../api/recoil/SignUp/useSignup";
 
 export default function SignupInput() {
-  const [name, setName] = useState("");
-  const [nickname, setNickname] = useState("");
-  const [phoneNum, setPhoneNum] = useState("");
-  const [password, setPassword] = useState("");
+  const {
+    name,
+    setName,
+    nickname,
+    setNickname,
+    email,
+    setEmail,
+    password,
+    setPassword,
+    phone,
+    setPhone,
+  } = useSignupInput();
+
   const [passwordCheck, setPasswordCheck] = useState("");
   const [passwordWrong, setPasswordWrong] = useState(false);
+
   return (
     <Column>
       <Row>
@@ -43,9 +53,9 @@ export default function SignupInput() {
         <Text>휴대폰 번호</Text>
         <Column>
           <TextField
-            value={phoneNum}
+            value={phone}
             onChange={(e) => {
-              setPhoneNum(e.target.value);
+              setPhone(e.target.value);
             }}
             name="phoneNum"
             type={`tel`}
@@ -56,8 +66,18 @@ export default function SignupInput() {
       </Row>
 
       <Row>
-        <Text>이메일 아이디</Text>
-        <EmailInput />
+        <Text>이메일</Text>
+        <Column>
+          <TextField
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            name="email"
+            type={"email"}
+            fullWidth
+          />
+        </Column>
       </Row>
 
       <Row>
