@@ -13,12 +13,10 @@ export const StudyInfoWrapper = styled.div`
 
 export const MyInfoWrapper = styled.div`
   height: 35%;
-  background-color: yellow;
 `;
 
 export const MyInfoPageWrapper = styled.div`
   height: 100%;
-  background-color: yellow;
 `;
 
 export const DivideLine = styled.hr`
@@ -26,4 +24,9 @@ export const DivideLine = styled.hr`
   color: #d9d9d9;
   margin-top: 2%;
   margin-bottom: 2%;
+`;
+
+export const BtnWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
 `;

@@ -9,10 +9,6 @@ import { ContentWrapper } from "../MyInfo/styles";
 export default function EntireStudy() {
   return (
     <Wrapper>
-      <BtnWrapper>
-        <EntireStudyBtn />
-        <EstablishedStudyBtn />
-      </BtnWrapper>
       <ContentWrapper>
         <StudyList>
           <Body2>TMI</Body2>
